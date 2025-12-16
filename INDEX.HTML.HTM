@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(0, 255, 102);
+            padding: 20px;
+        }
+        .container {
+            width: 50%;
+            background:lightgreen;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" placeholder="Enter first name"></td>
+                    <td>Last Name:</td>
+                    <td><input type="text" placeholder="Enter last name"></td>
+                </tr>
+                <tr>
+                    <td>Father's Name:</td>
+                    <td><input type="text" placeholder="Enter father name"></td>
+                    <td>Date Of Birth:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>CNIC:</td>
+                    <td><input type="text" placeholder="Enter CNIC"></td>
+                    <td>Phone ☎️:</td>
+                    <td><input type="text" placeholder="Enter phone number"></td>
+                </tr>
+                <tr>
+                    <td>Religion:</td>
+                    <td><input type="text" placeholder="Religion"></td>
+                </tr>
+                <tr>
+                    <td>Nationality:</td>
+                    <td><input type="text" placeholder="Nationality"></td>
+                </tr>
+                <tr>
+                    <td>Email ✉️:</td>
+                    <td><input type="email" placeholder="Enter Email"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Choose Course:</td>
+                    <td>
+                        <select name="Course">
+                            <option>---Select---</option>
+                            <option>HTML</option>
+                            <option>PHP</option>
+                            <option>JAVA</option>
+                            <option>PYTHON</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <input type="checkbox">Playing Cricket
+                        <input type="checkbox">Reading books
+                        <input type="checkbox">Singing
+                        <input type="checkbox">Dancing
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea name="address" placeholder="Enter address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Photo:</td>
+                    <td><input type="file"></td>
+                </tr>
+            </table>
+            <h3>Qualification</h3>
+            <table border="1">
+                <tr>
+                    <th>Sl.No</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>X</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>XII</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Master</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
